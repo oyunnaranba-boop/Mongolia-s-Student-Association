@@ -1,0 +1,592 @@
+/* About Page - EIMUN Style */
+.about-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  background: url('eimun pic1.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.about-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(10,30,70,0.88) 0%, rgba(120,0,30,0.78) 100%);
+  z-index: 1;
+}
+.about-center-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+.about-top-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  line-height: 1.1;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+.about-desc {
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 500;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  font-family: 'IBM Plex Mono', 'Fira Mono', 'Courier New', Courier, monospace;
+}
+.about-desc p {
+  margin-bottom: 18px;
+}
+/* Highlight / Key points */
+.uni-highlight {
+  background: linear-gradient(90deg, rgba(26,115,232,0.18) 0%, rgba(26,115,232,0.32) 100%);
+  color: #1a73e8;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 2px 8px;
+  box-shadow: 0 2px 8px rgba(26,115,232,0.10);
+  letter-spacing: 0.5px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+/* Fact/Myth Highlight Box */
+.fact-myth-box {
+  border: 2.5px solid #ff0033;
+  background: linear-gradient(90deg, rgba(255,0,51,0.09) 0%, rgba(80,0,20,0.13) 100%);
+  border-radius: 12px;
+  padding: 18px 22px 12px 22px;
+  margin: 32px 0 28px 0;
+  box-shadow: 0 2px 12px rgba(255,0,51,0.07);
+}
+.fact-myth-box h3 {
+  color: #ff0033;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.fact-myth-box p {
+  color: #ffeaea;
+  margin-bottom: 12px;
+}
+/* Banner Section */
+.banner-section {
+  width: 100%;
+  background: linear-gradient(90deg, #0a1a2f 0%, #1a73e8 100%);
+  padding: 18px 0 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+.subtle-redirect-btn {
+  background: linear-gradient(90deg, #1a73e8 0%, #002266 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 1.08rem;
+  font-family: 'Fira Sans', 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 4px 18px rgba(26,115,232,0.13);
+  opacity: 0.97;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  outline: none;
+}
+.subtle-redirect-btn:hover {
+  background: linear-gradient(90deg, #002266 0%, #1a73e8 100%);
+  color: #ffe066;
+  box-shadow: 0 6px 24px rgba(26,115,232,0.18);
+  transform: translateY(-2px) scale(1.04);
+  opacity: 1;
+}
+  letter-spacing: 0.5px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+.story-paragraph {
+  margin-bottom: 18px;
+}
+
+.story-paragraph p {
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  background: rgba(255,255,255,0.03);
+  border-radius: 7px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.story-paragraph .score {
+  font-weight: bold;
+  color: #ffcc00;
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+top:0;
+z-index:10;
+background:transparent;
+}
+
+.logo img{
+height:70px;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:white;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.login{
+background:#111;
+color:white;
+}
+
+.signup{
+background:white;
+color:black;
+}
+
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+}
+
+.image-grid {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.image-grid img {
+  position:absolute;
+  border-radius:0;
+  object-fit:cover;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  opacity:0.85;
+  cursor:pointer;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+/* Different positions and animation delays */
+.image-grid img:nth-child(1){
+  top:100px; 
+  left:50px; 
+  animation-delay:0s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(2){
+  top:180px; 
+  left:350px; 
+  animation-delay:1s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(3){
+  top:80px; 
+  right:280px; 
+  animation-delay:2s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(4){
+  top:440px; 
+  left:80px; 
+  animation-delay:1.5s; 
+  width:250px;
+}
+
+.image-grid img:nth-child(5){
+  bottom:220px; 
+  right:240px; 
+  animation-delay:0.5s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(6){
+  bottom:160px; 
+  left:460px; 
+  animation-delay:2.5s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(7){
+  top:460px; 
+  right:120px; 
+  animation-delay:3s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(8){
+  bottom:100px; 
+  right:490px; 
+  animation-delay:1s; 
+  width:200px;
+}
+
+.image-grid img:nth-child(9){
+  top:340px; 
+  right:420px; 
+  animation-delay:2s; 
+  width:200px;
+}
+/* Floating animation */
+@keyframes float {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  25%  { transform: translate(5px, -5px) rotate(-2deg); }
+  50%  { transform: translate(-5px, 5px) rotate(2deg); }
+  75%  { transform: translate(3px, -3px) rotate(-1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+/* Optional hover effect */
+.image-grid img:hover{
+  transform: scale(1.05);
+}
+
+.hero-text{
+position:absolute;
+z-index:5;
+max-width:700px;
+}
+
+.hero-text h1{
+font-size:80px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+opacity:0.8;
+margin-bottom:30px;
+}
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero-btn{
+padding:15px 40px;
+border-radius:30px;
+border:none;
+font-size:18px;
+cursor:pointer;
+background:white;
+color:black;
+}
+.hero-text h1 {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.3s; /* delay before animation starts */
+}
+
+/* Keyframes */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ec-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  gap: 60px;
+}
+
+.ec-text {
+  width: 100%;
+}
+
+.ec-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.ec-text h3 {
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.highlight {
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.ec-section {
+  border-top: 1px solid #222;
+}
+.ec-text {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ec-image {
+  width: 50%;
+  height: 500px;
+  background-image: url("crim-tfw.jpeg"); /* important */
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+/* ONLY APPLY TO THIS PAGE */
+body.extracurricular-page {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;       /* take full viewport height */
+  background: #0a0a0a;
+  color: #eee;
+  font-family: 'Fira Code', monospace; /* modern typewriter font */
+  line-height: 1.8;
+  padding: 0; /* remove offset for navbar if not needed */
+}
+
+/* HERO / TITLE (optional if you add a hero above) */
+.ec-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle at top center, #111 0%, #000 70%);
+  color: white;
+}
+
+.ec-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/* SECTION WRAPPER */
+.extracurricular-page .ec-section {
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center; /* text inside section centered */
+  line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('crim-tfw.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.extracurricular-page .ec-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* TEXT CONTENT */
+.extracurricular-page .ec-text {
+  line-height: 2.0;
+  color: #ddd;
+  font-size: 1rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+.extracurricular-page .ec-text h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+}
+
+.extracurricular-page .ec-text p {
+  margin-bottom: 15px;
+  opacity: 0.95;
+}
+
+/* Highlight / Key points */
+.extracurricular-page .ec-text .highlight {
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .extracurricular-page .ec-section {
+    padding: 30px 15px;
+  }
+
+  .extracurricular-page .ec-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .extracurricular-page .ec-text p {
+    font-size: 0.95rem;
+  }
+}
+.ec-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: justify;
+  line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+
+  /* background image */
+  background-image: url('crim tfw.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* dark overlay using linear-gradient */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('crim tfw.jpeg');
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* OPTIONAL hover effect */
+.ec-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+.ec-text {
+  position: relative;
+  z-index: 1; /* ensures text is above background */
+  text-align: center; /* center text inside text block */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering if needed */
+  align-items: center;
+}
+.video-container{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.video-card{
+  width:300px;
+  text-align:left;
+}
+
+.video-card video{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.video-card h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.video-card p{
+  font-size:14px;
+  line-height:1.6;
+  color:#ccc;
+}
